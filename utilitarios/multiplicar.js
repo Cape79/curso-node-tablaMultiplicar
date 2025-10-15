@@ -17,7 +17,7 @@ export const crearArchivo = async( base = 5, imprimir ) => {
             console.log(salida);
         }
 
-        fs.writeFileSync( `tabla-${ base }.txt`, salida);
+        fs.writeFileSync( `./salida/tabla-${ base }.txt`, salida);
         
         return(`tabla-${ base }.txt`);
     } catch (error) {
